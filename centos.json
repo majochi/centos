@@ -57,6 +57,12 @@
         ],
         [
           "modifyvm", "{{.Name}}", "--cpus", "{{ user `cpus` }}"
+        ],
+        [
+          "modifyvm", "{{.Name}}", "--pae", "on"
+        ],
+        [
+          "modifyvm", "{{.Name}}", "--nictype1", "Am79C970A"
         ]
       ],
       "virtualbox_version_file": ".vbox_version",
